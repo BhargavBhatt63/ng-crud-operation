@@ -1,0 +1,5 @@
+json server usage commands
+
+npm install -g json-server
+create db.json file
+run json => json-server -p 5555 db.json  // Here 5555 is port number. u can give any number

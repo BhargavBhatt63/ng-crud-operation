@@ -1,0 +1,20 @@
+<div class="container">
+    <button class="btn btn-primary" routerLink="/">Back</button>
+    <hr/>
+
+<form #productData="ngForm" (ngSubmit)="updateproduct(productData.value)" id="formNewProduct" name="formNewProduct">
+  <div class="form-group">
+      <label>
+    Name :
+  </label>
+  <input type="text" name="name" id="name" class="form-control" placeholder="name" [(ngModel)]="data.name" ngModel />
+  </div>
+  <div class="form-group">
+  <label>
+    Price :
+  </label>
+  <input type="text" name="price" id="price" class= "form-control" placeholder="price" [(ngModel)]="data.price" ngModel />
+</div>
+<button class="btn btn-primary">Update Product</button>
+</form>
+</div>
